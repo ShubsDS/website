@@ -34,6 +34,7 @@
 /* ── Base ── */
 html {
   background: var(--bg);
+  transition: background 0.2s ease;
 }
 
 body {
@@ -93,7 +94,7 @@ header {
 .headshot {
   width: 110px;
   height: 110px;
-  border-radius: 50%;
+  border-radius: 8px;
   object-fit: cover;
   border: 1px solid var(--photo-border);
   flex-shrink: 0;
