@@ -178,6 +178,24 @@ section p:last-child {
   font-size: 0.95rem;
 }
 
+/* Make links in content appear black with an underline (avoid purple visited color) */
+section a,
+.contact-email a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+section a:visited,
+.contact-email a:visited {
+  color: var(--text);
+}
+
+section a:hover,
+.contact-email a:hover {
+  color: var(--text);
+}
+
 /* ── Mobile ── */
 @media (max-width: 480px) {
   body {
