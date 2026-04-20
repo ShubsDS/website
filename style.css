@@ -176,6 +176,25 @@ section p:last-child {
 .contact-email {
   color: var(--text-body);
   font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.contact-cal {
+  font-size: 0.95rem;
+  margin-top: 0;
+}
+
+.contact-cal a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-cal a svg {
+  flex-shrink: 0;
 }
 
 /* Make links in content appear black with an underline (avoid purple visited color) */
@@ -187,12 +206,14 @@ section a,
 }
 
 section a:visited,
-.contact-email a:visited {
+.contact-email a:visited,
+.contact-cal a:visited {
   color: var(--text);
 }
 
 section a:hover,
-.contact-email a:hover {
+.contact-email a:hover,
+.contact-cal a:hover {
   color: var(--text);
 }
 
